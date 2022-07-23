@@ -50,7 +50,7 @@
 
 .main-Section{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .main-Section h2{
     text-transform: capitalize;
@@ -75,6 +75,12 @@ input[type="text"]{
     color:#FFf;
     font-weight: 600;
     letter-spacing: 1px;
+  }
+
+
+  .error{
+    color: red;
+    font-weight: 600;
   }
 
 
