@@ -76,3 +76,7 @@ input[type="text"]{
     font-weight: 600;
     letter-spacing: 1px;
   }
+
+
+
+  /* .class selector > *  select all the children */
