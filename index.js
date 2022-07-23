@@ -13,7 +13,21 @@ const Temperature = document.querySelector('.temClass')
 const Weather = document.querySelector('.weatherClass')
 const TempMax = document.querySelector('.temp-max')
 const TempMin = document.querySelector('.temp-min')
+const Daydate = document.querySelector('.days-report')
 
+// day functionality
+
+const days = new Date()
+
+let day = days.getDay()
+let month = days.getMonth()
+let year = days.getFullYear()
+console.log('day--->', day , month, year)
+
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+console.log()
 
 Btn.addEventListener('click', getInput)
 
@@ -43,6 +57,7 @@ async function getData(){
         Weather.innerHTML =`${response.weather[0].main}`
         TempMax.innerHTML =`${response.main.temp_max}`
         TempMin.innerHTML= `${response.main.temp_min}`
+        Daydate.innerHTML= `${weekDays[day]}, ${months[day]} ${year}`
         
     }
 
