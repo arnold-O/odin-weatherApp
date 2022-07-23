@@ -36,12 +36,31 @@
    padding: .5rem;
    border: none;
    border-radius: 5px;
+   cursor: pointer;
+   box-shadow: 1px 1px 1px  rgba(0, 0, 0, .5%);
+   
+}
+.header-section button:hover{
+    width: 201px;
+  
+   border: 1px solid #fff;
+   
    
 }
 
 .main-Section{
     text-align: center;
     margin-top: 40px;
+}
+.main-Section h2{
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.days-report{
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
 }
 
 input[type="text"]{
@@ -50,4 +69,10 @@ input[type="text"]{
     color: #fff;
     letter-spacing: 1px;
   
+  }
+ 
+  .report-Section{
+    color:#FFf;
+    font-weight: 600;
+    letter-spacing: 1px;
   }
