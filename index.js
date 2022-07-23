@@ -5,10 +5,14 @@ const api =  {
 
 
 
-
 const Search = document.querySelector('.search')
 const Btn = document.querySelector('.btn')
 const ErrorC = document.querySelector('.error')
+const Place = document.querySelector('.currentPlace')
+const Temperature = document.querySelector('.temClass')
+const Weather = document.querySelector('.weatherClass')
+const TempMax = document.querySelector('.temp-max')
+const TempMin = document.querySelector('.temp-min')
 
 
 Btn.addEventListener('click', getInput)
@@ -33,6 +37,13 @@ async function getData(){
        ErrorC.textContent="please enter a valid city"
        
         Search.value = ""
+    }else{
+        Place.innerHTML = `${response.name}, ${response.sys.country}`
+        Temperature.innerHTML =`${response.main.temp}`
+        Weather.innerHTML =`${response.weather[0].main}`
+        TempMax.innerHTML =`${response.main.temp_max}`
+        TempMin.innerHTML= `${response.main.temp_min}`
+        
     }
 
  
