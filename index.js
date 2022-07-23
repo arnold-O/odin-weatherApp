@@ -58,6 +58,8 @@ async function getData(){
         TempMax.innerHTML =`${response.main.temp_max}`
         TempMin.innerHTML= `${response.main.temp_min}`
         Daydate.innerHTML= `${weekDays[day]}, ${months[day]} ${year}`
+
+        Search.value = ""
         
     }
 
