@@ -6,7 +6,7 @@ body{
 .main-container{
     background-image: url("/image/img1.avif");
     width: 350px;
-    background-color: grey;
+    /* background-color: grey; */
     margin: 0 auto;
     height: 500px;
     display: flex;
