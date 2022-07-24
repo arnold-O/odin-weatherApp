@@ -18,11 +18,12 @@ const Daydate = document.querySelector('.days-report')
 // day functionality
 
 const days = new Date()
+// console.log(days)
 
 let day = days.getDay()
 let month = days.getMonth()
 let year = days.getFullYear()
-console.log('day--->', day , month, year)
+// console.log('day--->', day , month, year)
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -46,7 +47,7 @@ function getInput(e){
 async function getData(){
   const data =  await fetch(`${api.base}weather?q=${Search.value}&units=metric&appid=${api.key}`)
      const response = await data.json()
-     console.log(response)
+    //  console.log(response)
     if(response.cod == "404"){
        ErrorC.textContent="please enter a valid city"
        
